@@ -51,6 +51,13 @@ h2 {
     gap: 1.5rem;
 }
 
+#diagnosis-header-section h2,
+#recommendation-header-section h2 {
+    text-align: left;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
 mobility-test,
 exercise-recommendation {
     background-color: var(--card-background);

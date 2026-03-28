@@ -143,7 +143,7 @@ const mobilityTests = [
     {
         title: 'Hip Mobility',
         description: 'Can you sit in a deep squat?',
-        image: 'https://images.pexels.com/photos/4164086/pexels-photo-4164086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' // Replace with a relevant image from Pexels
+        image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shape.com%2Ffitness%2Fworkouts%2Fhip-mobility-exercises&psig=AOvVaw0DE8CMk_6y2k8hYm3j3k-f&ust=1710582186791000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJD015_b94QDFQAAAAAdAAAAABAE'
     },
     {
         title: 'Spinal Mobility',
@@ -174,7 +174,6 @@ const exerciseRecommendations = {
 };
 
 function populateTests() {
-    diagnosisSection.innerHTML = '<h2>Diagnose Your Mobility</h2>';
     for (const test of mobilityTests) {
         const mobilityTest = document.createElement('mobility-test');
         mobilityTest.setAttribute('title', test.title);
@@ -194,11 +193,6 @@ function handleTestResult(event) {
         exerciseRecommendation.setAttribute('description', recommendation.description);
         exerciseRecommendation.setAttribute('video-id', recommendation.videoId);
         exerciseRecommendation.setAttribute('link', recommendation.link);
-
-        if (recommendationSection.children.length < 2) {
-            recommendationSection.innerHTML = '<h2>Personalized Exercises</h2>'
-        }
-
         recommendationSection.appendChild(exerciseRecommendation);
     }
 }
