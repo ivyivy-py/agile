@@ -7,16 +7,20 @@ const header = document.querySelector('header');
 // Fetch background image from Pexels
 async function getBackgroundImage() {
     try {
-        const response = await fetch('https://api.pexels.com/v1/search?query=nature&per_page=1', {
+        const response = await fetch('https://api.pexels.com/v1/search?query=people exercising&per_page=15', { // Changed query and getting more options
             headers: {
                 Authorization: pexelsApiKey
             }
         });
         const data = await response.json();
-        const imageUrl = data.photos[0].src.landscape;
+        // Get a random image from the results
+        const randomIndex = Math.floor(Math.random() * data.photos.length);
+        const imageUrl = data.photos[randomIndex].src.landscape;
         header.style.backgroundImage = `url(${imageUrl})`;
     } catch (error) {
         console.error('Error fetching background image:', error);
+        // Fallback background
+        header.style.backgroundColor = '#6c757d';
     }
 }
 
@@ -138,17 +142,17 @@ const mobilityTests = [
     {
         title: 'Shoulder Flexibility',
         description: 'Can you touch your hands behind your back?',
-        image: 'https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' // Replace with a relevant image from Pexels
+        image: 'https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
     },
     {
         title: 'Hip Mobility',
         description: 'Can you sit in a deep squat?',
-        image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shape.com%2Ffitness%2Fworkouts%2Fhip-mobility-exercises&psig=AOvVaw0DE8CMk_6y2k8hYm3j3k-f&ust=1710582186791000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJD015_b94QDFQAAAAAdAAAAABAE'
+        image: 'https://images.pexels.com/photos/1882092/pexels-photo-1882092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
         title: 'Spinal Mobility',
         description: 'Can you touch your toes without bending your knees?',
-        image: 'https://images.pexels.com/photos/4498155/pexels-photo-4498155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' // Replace with a relevant image from Pexels
+        image: 'https://images.pexels.com/photos/4498155/pexels-photo-4498155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
     }
 ];
 
