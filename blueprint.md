@@ -10,6 +10,8 @@ This website will guide users through a self-diagnosis of their mobility functio
 ### Implemented
 
 *   **Initial Project Setup:** Basic HTML, CSS, and JavaScript files have been created.
+*   **Dynamic Header:** The header now features a dynamic background image fetched from Pexels.
+*   **Web Components:** The application uses Web Components for both mobility tests and exercise recommendations, making the code more modular and reusable.
 
 ### Current Plan
 
@@ -25,16 +27,16 @@ This website will guide users through a self-diagnosis of their mobility functio
         *   Shoulder flexibility
         *   Hip mobility
         *   Spinal mobility
-        *   Ankle flexibility
     *   For each test, users will answer a simple question (e.g., "Could you complete this movement without discomfort?").
 
 3.  **Exercise Recommendation Section:**
     *   Based on the user's answers, the website will dynamically display a list of recommended exercises.
+    *   **Content Provider:** Exercise videos are sourced from reputable, low-effort-focused providers like **YOGABODY** to ensure high-quality, relevant recommendations.
     *   Each recommendation will include:
         *   The name of the exercise.
         *   A brief description of its benefits.
         *   An embedded YouTube video demonstrating the exercise.
-        *   A link to a reputable website for more information (e.g., a physical therapy or fitness site).
+        *   A link to a reputable website for more information.
     *   Exercises will be categorized by the mobility area they target.
 
 4.  **Styling & Design:**

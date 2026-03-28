@@ -158,22 +158,22 @@ const mobilityTests = [
 
 const exerciseRecommendations = {
     'Shoulder Flexibility': {
-        title: 'Shoulder Pass-Throughs',
-        description: 'Improves shoulder mobility and flexibility.',
-        videoId: 'h-a-D_6s-cM',
-        link: 'https://www.healthline.com/health/exercise-fitness/shoulder-stretches'
+        title: '5-Minute Daily Shoulder Stretches',
+        description: 'Quick and easy shoulder stretches for daily mobility from YOGABODY.',
+        videoId: 'C9_z4Q222yM',
+        link: 'https://www.yogabody.com/'
     },
     'Hip Mobility': {
-        title: 'Deep Squat',
-        description: 'Improves hip flexibility and strength.',
-        videoId: 'av3b1_R2h3M',
-        link: 'https://www.healthline.com/health/fitness-exercise/deep-squat'
+        title: '10-Minute Daily Hip Stretches',
+        description: 'Improve hip flexibility and reduce tightness with these daily stretches from YOGABODY.',
+        videoId: 'be3y2a2p_yM',
+        link: 'https://www.yogabody.com/'
     },
     'Spinal Mobility': {
-        title: 'Cat-Cow Stretch',
-        description: 'Improves spinal flexibility and relieves back tension.',
-        videoId: 'kqnua4rHVVA',
-        link: 'https://www.yogajournal.com/poses/cat-pose/'
+        title: 'Awaken Your Spine',
+        description: 'Gentle exercises to improve spinal mobility and flexibility from YOGABODY.',
+        videoId: 'F-lT0_D3q1Q',
+        link: 'https://www.yogabody.com/'
     }
 };
 
